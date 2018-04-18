@@ -18,5 +18,9 @@ html,body {
   line-height:1.618;
   padding:1rem 0;
   }
+.add-bottom { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
   
  

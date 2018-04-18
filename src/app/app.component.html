@@ -1,24 +1,6 @@
 <div class="container">
   <div class="column add-bottom">
-      <div id="mainwrap">
-          <div id="nowPlay">
-              <span class="left" id="npAction" [hidden]="isPlaying" >Paused...</span>
-              <span class="left" id="npAction" [hidden]="!isPlaying">Playing...</span>
-              <span class="right" id="npTitle">{{songPlaying}}</span>
-          </div>
-          <div id="plwrap">
-              <ul id="plList">
-                <li *ngFor="let song of playList; let idx=  index">
-                  <div class="plItem">
-                    <button class="plIPlay" (click)="play(song)"><span class="fas fa-play"></span></button>
-                    <span class="plNum">{{idx}}</span>
-                    <span class="plTitle">{{song.name}}</span>
-                    <span class="plLength">230</span>
-                  </div>
-                </li>
-              </ul>
-          </div>
-      </div>
+   <app-song-list></app-song-list>
   </div>
   <div class="column add-bottom center">
       <p>A PEN by <a href="https://codepen.io/markhillard/">Mark Hillard</a></p>

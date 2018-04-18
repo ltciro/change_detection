@@ -1,0 +1,15 @@
+#nowPlay {
+  height: 60px;
+  font-size: 2vw;
+  font-weight: bold
+
+}
+
+#npAction {
+padding:21px;
+position:absolute;
+}
+
+#npTitle {
+padding:21px;
+}
