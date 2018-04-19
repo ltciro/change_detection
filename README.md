@@ -1,6 +1,6 @@
 # PlayerCD
 
-## Paso 2
+## Paso 3
 
 Aqui tenemos la versión 2 de playerCD  con 2 nuevos componentes:
 
