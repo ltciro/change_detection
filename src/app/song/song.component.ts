@@ -20,6 +20,21 @@ export class SongComponent implements OnInit, OnChanges, OnDestroy, DoCheck,
     this.play.emit(this.song);
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+  // tslint:disable-next-line:no-trailing-whitespace
+  
+
   /**====================
    * HOOKS
    ===========================**/
