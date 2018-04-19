@@ -9,9 +9,9 @@ export class SongListComponent implements OnInit {
   private playList: any[] = [
     {name: 'Desaprendiendo', played: false},
     {name: 'La vida plena', played: false}
-    ];
-    private songPlaying = '';
-    private isPlaying = false;
+  ];
+  private songPlaying = '';
+  private isPlaying = false;
 
   constructor() { }
 

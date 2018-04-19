@@ -1,0 +1,52 @@
+
+.container { position:relative; margin:0 auto; max-width:800px; width:100%; }
+.column { width:inherit; }
+   
+  #plwrap {
+    margin:0 auto;
+    }
+    
+  a[id^="btn"] {
+  border-radius:3px;
+  color:#fff;
+  cursor:pointer;
+  display:inline-block;
+  font-size:2rem;
+  height:35px;
+  line-height:.8;
+  margin:0 20px 20px;
+  padding:5px 10px;
+  text-decoration:none;
+  transition:background .3s ease;
+  width:35px;
+  }
+  
+  a[id^="btn"]:last-child {
+  margin-left:-4px;
+  }
+  
+  a[id^="btn"]:hover,
+  a[id^="btn"]:active {
+  background-color:rgba(0,0,0,.1);
+  color:#fff;
+  }
+  
+  a[id^="btn"]::-moz-focus-inner {
+  border:0;
+  padding:0;
+  }
+  #nowPlay {
+    height: 60px;
+    font-size: 2vw;
+    font-weight: bold
+  
+  }
+  
+  #npAction {
+  padding:21px;
+  position:absolute;
+  }
+  
+  #npTitle {
+  padding:21px;
+  }

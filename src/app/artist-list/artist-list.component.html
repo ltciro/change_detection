@@ -1,0 +1,11 @@
+<div id="mainwrap">
+    <div id="nowPlay">
+        <span class="left" id="npTitle">Artistas</span>
+    </div>
+    <div id="plwrap">
+        <ul id="plList">
+          <app-artist *ngFor="let artist of artistList" [artist]="artist">
+          </app-artist>
+        </ul>
+    </div>
+</div>

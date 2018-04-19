@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SongListComponent } from './song-list/song-list.component';
 import { SongComponent } from './song/song.component';
 import { StatePlayerComponent } from './state-player/state-player.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ArtistListComponent } from './artist-list/artist-list.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { StatePlayerComponent } from './state-player/state-player.component';
     AppComponent,
     SongListComponent,
     SongComponent,
-    StatePlayerComponent
+    StatePlayerComponent,
+    ArtistComponent,
+    ArtistListComponent
   ],
   imports: [
     BrowserModule
