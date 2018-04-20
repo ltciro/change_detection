@@ -22,13 +22,7 @@ export class SongListComponent implements OnInit {
   play(song: any, index) {
     const isplaying = this.songPlaying.name === song.name ? !song.played : true;
     this.playList[index].played = isplaying ;
-
-// Actualiza por atributo
-    this.songPlaying.name = song.name ;
-    this.songPlaying.played = isplaying ;
-
-// Actualiza por referencia
-    // this.songPlaying = {name: song.name, played: isplaying} ;
+    this.songPlaying = {name: song.name, played: isplaying} ;
  }
 
 }

@@ -1,15 +1,17 @@
 import { Component, OnInit, Input, SimpleChanges, OnChanges, OnDestroy, DoCheck,
-  AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked } from '@angular/core';
+  AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-artist',
   templateUrl: './artist.component.html',
-  styleUrls: ['./artist.component.css']
+  styleUrls: ['./artist.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArtistComponent implements OnInit, OnChanges, OnDestroy, DoCheck,
 AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked {
 
   @Input() artist;
+
   constructor() { }
 
 

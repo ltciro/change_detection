@@ -2,7 +2,9 @@
     <div id="nowPlay">
         <span class="left" id="npTitle">Artistas</span>
     </div>
+    
     <div id="plwrap">
+        <input class="inputC" [(ngModel)]="commentArtista" (keypress)="doListenCD(false)" (blur)="doListenCD(true)">{{commentArtista}}
         <ul id="plList">
           <app-artist *ngFor="let artist of artistList" [artist]="artist">
           </app-artist>

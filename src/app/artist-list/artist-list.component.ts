@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Artists } from '../data/artists';
 
 @Component({
@@ -9,9 +9,19 @@ import { Artists } from '../data/artists';
 })
 export class ArtistListComponent implements OnInit {
   private artistList: any[] = Artists;
-  constructor() { }
+  private commentArtista;
+
+  constructor(private ref: ChangeDetectorRef) { }
 
   ngOnInit() {
+  }
+
+  doListenCD(value) {
+    if (value) {
+      this.ref.reattach();
+    } else {
+      this.ref.detach();
+    }
   }
 
 }
