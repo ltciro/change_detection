@@ -1,5 +1,5 @@
 <div id="nowPlay">
-    <span class="left" id="npAction" [hidden]="isPlaying" >Paused</span>
-    <span class="left" id="npAction" [hidden]="!isPlaying">Playing...</span>
-    <span class="right" id="npTitle">{{songPlaying}}</span>
+    <span class="left" id="npAction" [hidden]="songPlaying.played" >Paused</span>
+    <span class="left" id="npAction" [hidden]="!songPlaying.played">Playing...</span>
+    <span class="right" id="npTitle">{{songPlaying.name}}</span>
 </div>

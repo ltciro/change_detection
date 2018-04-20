@@ -1,9 +1,11 @@
 <div id="mainwrap">
-    <app-state-player [isPlaying]="isPlaying" [songPlaying]="songPlaying"></app-state-player>
+    <app-state-player [songPlaying]="songPlaying">
+    </app-state-player>
     <div id="plwrap">
         <ul id="plList">
-          <app-song *ngFor="let song of playList; let idx=  index" [song]="song" [idx]="idx" (play)="play($event)">
+          <app-song *ngFor="let song of playList; let idx=  index" [song]="song" [idx]="idx" (play)="play($event, idx)">
           </app-song>
+          {{this.songPlaying.name}} - {{this.songPlaying.played}}
         </ul>
     </div>
 </div>

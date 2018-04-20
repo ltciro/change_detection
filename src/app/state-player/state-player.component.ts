@@ -1,15 +1,17 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges,
   OnDestroy, DoCheck, AfterViewInit, AfterViewChecked, AfterContentInit,
-  AfterContentChecked } from '@angular/core';
+  AfterContentChecked, 
+  ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   selector: 'app-state-player',
   templateUrl: './state-player.component.html',
-  styleUrls: ['./state-player.component.css']
+  styleUrls: ['./state-player.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StatePlayerComponent implements OnInit, OnChanges, OnDestroy, DoCheck,
 AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked  {
-  @Input() isPlaying;
+
   @Input() songPlaying;
 
   constructor() { }
