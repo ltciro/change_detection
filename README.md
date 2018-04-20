@@ -2,7 +2,7 @@
 
 ## Paso 5
 
-Aqui podemos ver en acción el poder de la estrategia OnPush para mejorar el performance de nuestra app 
+Aqui podemos ver en acción cuando se marcan los componentes para el chequeo de los cambios.
 
 - Agregamos la estrategia onPush para SongsListComponent
 - Cambiamos los inputs de StatePlayerComponent para que reciba un sólo objeto Input
