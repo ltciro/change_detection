@@ -7,7 +7,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges,
   selector: 'app-state-player',
   templateUrl: './state-player.component.html',
   styleUrls: ['./state-player.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  //changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StatePlayerComponent implements OnInit, OnChanges, OnDestroy, DoCheck,
 AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked  {

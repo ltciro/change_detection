@@ -35,4 +35,8 @@
   border:0;
   padding:0;
   }
-  
+
+  .song_played{
+    color: #ee515f;
+    font-weight: 800;
+  }
