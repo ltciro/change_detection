@@ -9,6 +9,7 @@ import { StatePlayerComponent } from './state-player/state-player.component';
 import { ArtistComponent } from './artist/artist.component';
 import { ArtistListComponent } from './artist-list/artist-list.component';
 import { CommentsComponent } from './comments/comments.component';
+import { AdsComponent } from './ads/ads.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CommentsComponent } from './comments/comments.component';
     StatePlayerComponent,
     ArtistComponent,
     ArtistListComponent,
-    CommentsComponent
+    CommentsComponent,
+    AdsComponent
   ],
   imports: [
     BrowserModule,
