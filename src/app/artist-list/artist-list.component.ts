@@ -5,7 +5,7 @@ import { Artists } from '../data/artists';
   selector: 'app-artist-list',
   templateUrl: './artist-list.component.html',
   styleUrls: ['./artist-list.component.css'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArtistListComponent implements OnInit {
   private artistList: any[] = Artists;
