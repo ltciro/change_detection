@@ -8,6 +8,7 @@ import { SongComponent } from './song/song.component';
 import { StatePlayerComponent } from './state-player/state-player.component';
 import { ArtistComponent } from './artist/artist.component';
 import { ArtistListComponent } from './artist-list/artist-list.component';
+import { CommentsComponent } from './comments/comments.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ArtistListComponent } from './artist-list/artist-list.component';
     SongComponent,
     StatePlayerComponent,
     ArtistComponent,
-    ArtistListComponent
+    ArtistListComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
