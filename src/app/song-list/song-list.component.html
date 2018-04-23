@@ -3,9 +3,9 @@
     </app-state-player>
     <div id="plwrap">
         <ul id="plList">
-          <app-song *ngFor="let song of playList; let idx=  index" [song]="song" [idx]="idx" (play)="play($event, idx)">
+          <app-song *ngFor="let song of playList; let idx=  index" [song]="song" [idx]="idx" (play)="play($event, idx)" [ngClass]="{'song_played': song.played}" >
           </app-song>
-          {{this.songPlaying.name}} - {{this.songPlaying.played}}
         </ul>
     </div>
 </div>
+<app-comments></app-comments>
